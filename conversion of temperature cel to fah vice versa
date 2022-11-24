@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i=89;
+	while(i==89)
+	{
+	int number;
+	cout<<"please enter your choice\n 1 is for fah to cel\n 2 is cel to fah\n\t";
+	cin>>number;
+	if(number==1)
+	{
+		int fah;
+		cout<<"enter a temperature in fah";
+		cin>>fah;
+		int cel=(fah-32)*5/9;
+		cout<<"equivalent temperature in celcius is"<<cel<<endl;
+		
+	}
+	else if(number==2)
+	{
+		int cel;
+		cout<<"enter a temperature in cel";
+		cin>>cel;
+		int fah=cel*(5/9)+32;
+		cout<<"equivalent temperature in fah is"<<fah<<endl;
+		
+	}
+	cout<<"\n\t\tDo you want  more Results\n\t\tpress y for continue\t\n\t\tpress n to terminate\t";
+	cin>>i;
+	}
+	
+	cout<<"\n\n\t\t\tThank you";
+}
