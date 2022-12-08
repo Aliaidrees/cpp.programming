@@ -6,38 +6,38 @@ void sub();
 void mult();
 int main()
 {
-	int ch;
+	char ch = 'y';
 	while(ch=='y'||ch=='Y')
 	{
-	system("cls");
-	switchwork();
-	cout<<"do you want more result\n press y for continue\n Nfor stop";
-	cin>>ch;	
+		system("cls");
+		switchwork();
+		cout<<"do you want more result\n press y for continue\n Nfor stop";
+		cin>>ch;	
 	}
 	cout<<"thank you for using this program";
-}
+} // Main closing Here. . .
+
 void switchwork()
 {
 	int choice;
- cout<<"please enter your choice\n1:add\n2:sub\n3:mult\n";
- cin>>choice;
- switch(choice)
-{
-	case 1:
-		add();
-		break;
-	case 2:
-		sub();
-		break;
-	case 3:
-		mult();
-	default:
-		cout<<"wrong input";
-		
+ 	cout<<"please enter your choice\n1:add\n2:sub\n3:mult\n";
+ 	cin>>choice;
+ 	switch(choice)
+	{
+		case 1:
+			add();
+			break;
+		case 2:
+			sub();
+			break;
+		case 3:
+			mult();
+			break;
+		default:
+			cout<<"wrong input";
+	}
 }
-	
-
-void add();
+void add()
 {
    int valueOne;
    int valueTwo;
@@ -48,7 +48,7 @@ void add();
    cout<<"the result is"<<valueOne+valueTwo<<endl;
    
 }
-void sub();
+void sub()
 {
    int valueOne;
    int valueTwo;
@@ -59,7 +59,7 @@ void sub();
    cout<<"the result is"<<valueOne-valueTwo<<endl;
    
 }
-void mult();
+void mult()
 {
    int valueOne;
    int valueTwo;
@@ -70,5 +70,3 @@ void mult();
    cout<<"the result is"<<valueOne*valueTwo<<endl;
    
 }
-}
-
